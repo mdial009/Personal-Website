@@ -191,8 +191,8 @@ Sidebar
 
 .sidebar-toggle {
   position: fixed;
-  bottom: 1rem;
-  left: 1.5rem;
+  bottom: 1.5rem;
+  left: 1rem;
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
@@ -238,7 +238,6 @@ Sidebar
 .logo {
   justify-self: center;
   height: 40px;
-  border-radius: 99px;
 }
 
 .side-links a {
@@ -493,4 +492,16 @@ body.theme-dark {
   box-shadow: var(--light-shadow);
   max-width: var(--fixed-width);
   position: center;
+}
+footer {
+  background: var(--clr-grey-1);
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  color: var(--clr-white);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
 }
