@@ -257,7 +257,6 @@ nav {
 
 .links a:hover {
   color: var(--clr-primary-5);
-  background: var(--clr-primary-8);
 }
 @media screen and (min-width: 800px) {
   nav {
