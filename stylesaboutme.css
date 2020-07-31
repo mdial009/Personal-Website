@@ -348,8 +348,14 @@ header {
 #services {
   background: var(--clr-white);
 }
+/*Footer*/
 footer {
-  background: var(--clr-grey-1);
+  background: var(--clr-primary-5);
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 footer p {
   color: var(--clr-white);

@@ -151,17 +151,6 @@ navToggle.addEventListener("click", function (e) {
   }
 });
 
-const modalBtn = document.querySelector(".modal-btn");
-const modal = document.querySelector(".modal-overlay");
-const closeBtnmodal = document.querySelector(".close-btnmodal");
-
-modalBtn.addEventListener("click", function () {
-  modal.classList.add("open-modal");
-});
-closeBtnmodal.addEventListener("click", function () {
-  modal.classList.remove("open-modal");
-});
-
 function applyTheme(theme) {
   document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
   document.body.classList.add(`theme-${theme}`);

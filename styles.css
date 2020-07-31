@@ -354,6 +354,7 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  padding-right: 410px;
 }
 /* TOGGLE CLASS */
 .show-links {
@@ -366,7 +367,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.25rem;
   }
   .nav-header {
     padding: 0;
@@ -513,6 +514,7 @@ HomePage
     color: var(--clr-primary-5);
   }
 }
+/* Phone css For index*/
 @media screen and (max-width: 450px) {
   .centerthis {
     position: absolute;
@@ -546,6 +548,9 @@ HomePage
     color: transparent;
     animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3.5s;
+  }
+  .sidebar-toggle {
+    display: none;
   }
 }
 
@@ -606,10 +611,14 @@ body.theme-dark {
   position: center;
 } */
 
+/*Footer*/
 footer {
-  background: var(--clr-grey-1);
+  background: var(--clr-primary-5);
+  width: 500px;
+  margin: 0 auto;
   position: fixed;
   bottom: 0;
+  width: 100%;
 }
 footer p {
   color: var(--clr-white);
