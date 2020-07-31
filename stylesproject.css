@@ -56,7 +56,7 @@ Variables
   --dark-background-color: #111111;
   --dark-background-color-alt: #222222;
   --dark-trim-color: #333333;
-  --dark-text-color: #eeeeee;
+  --dark-text-color: var(--clr-primary-8);
 }
 /*
 =============== 
@@ -73,14 +73,12 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
   font-size: 0.875rem;
   /* Light Theme */
   --background-color: #ffffff;
   --background-color-alt: #eeeeee;
   --trim-color: #dddddd;
-  --text-color: #333333;
+  --text-color: #ffffff;
   background: var(--background-color);
   color: var(--text-color);
 }
@@ -120,7 +118,6 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -371,6 +368,16 @@ nav {
 Projects
 ===============
 */
+.backgroundimg {
+  background: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)),
+    url("images/hero.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 .firstlettercolor {
   color: var(--clr-primary-5);
 }
