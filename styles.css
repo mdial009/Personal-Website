@@ -427,66 +427,71 @@ HomePage
   background-repeat: no-repeat;
   min-height: 100vh;
 }
-/* hello my name is */
-.centerthis {
-  position: absolute;
-  left: 50%;
-  margin-left: -100px;
-}
-.TitleNameIndex1 {
-  display: block;
-  width: fit-content;
-  position: relative;
-  color: transparent;
-  animation: text_reveal 0.7s ease forwards;
-  animation-delay: 1.5s;
-}
-.TitleNameIndex2 {
-  display: block;
-  width: fit-content;
-  position: relative;
-  color: transparent;
-  margin-left: -100px;
-  animation: text_reveal 0.5s ease forwards;
-  animation-delay: 2.5s;
-}
-.TitleNameIndex3 {
-  color: var(--clr-primary-5);
-  position: relative;
-  margin-left: -150px;
-  color: transparent;
-  animation: text_reveal_name 0.5s ease forwards;
-  animation-delay: 3.5s;
-}
-.nameanime1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  background-color: var(--clr-primary-5);
-  animation: text_reveal_box 1s ease;
-  animation-delay: 1s;
-}
-.nameanime2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  background-color: var(--clr-primary-5);
-  animation: text_reveal_box 1s ease;
-  animation-delay: 2s;
-}
-.nameanime3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  background-color: var(--clr-primary-5);
-  animation: text_reveal_box 1s ease;
-  animation-delay: 3s;
+@media screen and (min-width: 400px) {
+  /* hello my name is */
+  .centerthis {
+    position: absolute;
+    left: 51%;
+    margin-left: -100px;
+  }
+  .TitleNameIndex1 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.7s ease forwards;
+    animation-delay: 1.5s;
+  }
+  .TitleNameIndex2 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    margin-left: -110px;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 2.5s;
+  }
+  .TitleNameIndex3 {
+    color: var(--clr-primary-5);
+    position: relative;
+    margin-left: -150px;
+    color: transparent;
+    width: fit-content;
+    position: relative;
+
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3.5s;
+  }
+  .nameanime1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--clr-primary-5);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+  }
+  .nameanime2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--clr-primary-5);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 2s;
+  }
+  .nameanime3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--clr-primary-5);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 3s;
+  }
 }
 /* hello my name is animation */
 @keyframes text_reveal_box {
@@ -509,7 +514,7 @@ HomePage
     color: var(--clr-primary-5);
   }
 }
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 375px) {
   .centerthis {
     position: absolute;
     left: 60%;
@@ -529,6 +534,7 @@ HomePage
     width: fit-content;
     position: relative;
     color: transparent;
+    margin-left: -100px;
     animation: text_reveal 0.5s ease forwards;
     animation-delay: 2.5s;
   }
