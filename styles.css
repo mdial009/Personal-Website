@@ -509,17 +509,17 @@ HomePage
     color: var(--clr-primary-5);
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 350px) {
   .centerthis {
     position: absolute;
     left: 60%;
-    margin-left: -100px;
+    margin-left: -90px;
   }
   .TitleNameIndex1 {
     display: block;
     width: fit-content;
     position: relative;
-    margin-left: -40px;
+    margin-left: -10px;
     color: transparent;
     animation: text_reveal 0.7s ease forwards;
     animation-delay: 1.5s;
@@ -531,6 +531,14 @@ HomePage
     color: transparent;
     animation: text_reveal 0.5s ease forwards;
     animation-delay: 2.5s;
+  }
+  .TitleNameIndex3 {
+    color: var(--clr-primary-5);
+    position: relative;
+    margin-left: -120px;
+    color: transparent;
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3.5s;
   }
 }
 
