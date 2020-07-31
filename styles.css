@@ -452,13 +452,12 @@ HomePage
     animation-delay: 2.5s;
   }
   .TitleNameIndex3 {
+    display: block;
     color: var(--clr-primary-5);
     position: relative;
+    width: fit-content;
     margin-left: -150px;
     color: transparent;
-    width: fit-content;
-    position: relative;
-
     animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3.5s;
   }
@@ -514,7 +513,7 @@ HomePage
     color: var(--clr-primary-5);
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .centerthis {
     position: absolute;
     left: 60%;
@@ -539,6 +538,8 @@ HomePage
     animation-delay: 2.5s;
   }
   .TitleNameIndex3 {
+    display: block;
+    width: fit-content;
     color: var(--clr-primary-5);
     position: relative;
     margin-left: -120px;
