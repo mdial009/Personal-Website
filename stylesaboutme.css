@@ -396,7 +396,6 @@ footer p {
 
 /* contact Section */
 #contact .contact {
-  flex-direction: column;
   max-width: auto;
   margin: 0 auto;
 }
