@@ -239,24 +239,24 @@ Scroll
   height: 200px;
 }
 .links a {
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-9);
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
   transition: var(--transition);
   font-weight: 900;
-  margin: 0;
   padding: 0.5rem 1rem;
 }
 
 .links a:hover {
   color: var(--clr-primary-5);
+  padding-left: 1.5rem;
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-5);
+  padding-left: 2.5rem;
 }
 @media screen and (min-width: 800px) {
-  nav {
-    background: transparent;
-  }
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
