@@ -344,7 +344,8 @@ nav {
 .links a:hover {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
-  padding-left: 1.5rem;
+  padding-left: 10.5rem;
+  padding-right: 410px;
 }
 .social-icons {
   display: none;
@@ -354,7 +355,6 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-  padding-right: 410px;
 }
 /* TOGGLE CLASS */
 .show-links {
@@ -368,7 +368,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.25rem;
+    padding-right: 410px;
   }
+
   .nav-header {
     padding: 0;
   }
