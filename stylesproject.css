@@ -285,7 +285,6 @@ nav {
   color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {

@@ -194,17 +194,11 @@ Scroll
 ===============
 */
 /* navbar */
-nav {
-  background: var(--clr-white);
-  padding: 1rem 1.5rem;
-}
+
 /* fixed nav */
 .fixed-nav {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
 .fixed-nav .links a {
@@ -220,20 +214,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 .nav-toggle {
   font-size: 1.5rem;
   color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
   color: var(--clr-primary-5);
+  transform: rotate(90deg);
 }
 .logo {
-  height: 55px;
+  height: 30px;
 }
 .links-container {
   height: 0;
@@ -244,15 +239,15 @@ nav {
   height: 200px;
 }
 .links a {
-  background: var(--clr-white);
   color: var(--clr-grey-5);
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
   transition: var(--transition);
-  font-weight: bold;
-  padding: 0.5rem 0;
+  font-weight: 900;
+  margin: 0;
+  padding: 0.5rem 1rem;
 }
 
 .links a:hover {
@@ -263,7 +258,6 @@ nav {
     background: transparent;
   }
   .nav-center {
-    width: 90vw;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -281,23 +275,25 @@ nav {
   }
   .links {
     display: flex;
+    padding-right: 410px;
+    transition: var(--transition);
   }
   .links a {
     background: transparent;
-    color: var(--clr-white);
+    color: var(--clr-primary-9);
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
     transition: var(--transition);
-    margin: 0 1rem;
-    font-weight: bold;
-    padding: 0;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
   }
   .links a:hover {
     color: var(--clr-white);
   }
 }
+
 /* hero */
 header {
   min-height: 10vh;
