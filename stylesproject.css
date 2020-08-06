@@ -285,13 +285,16 @@ nav {
   color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
+  transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1);
   transform: rotate(90deg);
 }
-
+.logo {
+  height: 40px;
+}
 .links a {
   color: var(--clr-primary-9);
   font-size: 1.1rem;
@@ -305,7 +308,7 @@ nav {
 .links a:hover {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
-  padding-left: 1.5rem;
+  padding-left: 2.5rem;
 }
 .social-icons {
   display: none;
@@ -315,7 +318,6 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-  padding-right: 410px;
 }
 /* TOGGLE CLASS */
 .show-links {
@@ -329,7 +331,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.25rem;
+    padding-right: 410px;
   }
+
   .nav-header {
     padding: 0;
   }

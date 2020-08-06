@@ -344,8 +344,7 @@ nav {
 .links a:hover {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
-  padding-left: 10.5rem;
-  padding-right: 410px;
+  padding-left: 2.5rem;
 }
 .social-icons {
   display: none;
