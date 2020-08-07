@@ -191,7 +191,7 @@ Sidebar
 
 .sidebar-toggle {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 0.5rem;
   left: 1rem;
   font-size: 1.5rem;
   background: transparent;
@@ -615,8 +615,6 @@ body.theme-dark {
 /*Footer*/
 footer {
   background: var(--clr-primary-5);
-  width: 500px;
-  margin: 0 auto;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -627,4 +625,27 @@ footer p {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
+}
+
+.social-icon {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  align-items: bottom;
+}
+.social-item img {
+  filter: grayscale(1);
+  transition: 0.3s ease filter;
+}
+.social-item:hover img {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 450px) {
+  .social-item img {
+    filter: blur(.1px);
+    transition: 0.3s ease filter;
+  }
+  .social-item:hover img {
+    filter: grayscale(0);
+  }
 }
