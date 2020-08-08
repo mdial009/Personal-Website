@@ -475,13 +475,27 @@ footer p {
 }
 
 .cta {
-  color: var(--clr-primary-5);
-  font-size: 3rem;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px double var(--clr-primary-5);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  color: black;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.5s ease;
+  background-color:var(--clr-primary-6);
+}
+.cta:hover {
+  background-color: var(--clr-primary-1);
 }
 .about-img {
   height: auto;
   width: auto;
-  border: 5px solid var(--clr-primary-6);
+  border: 5px double var(--clr-primary-6);
   border-radius: 1px;
   position: relative;
 }
@@ -492,7 +506,7 @@ footer p {
   top: 30px;
   height: 99%;
   width: 99%;
-  border: 5px solid var(--clr-primary-6);
+  border: 5px double var(--clr-primary-6);
   z-index: -1;
 }
 /* End About Section */
