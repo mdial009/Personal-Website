@@ -252,6 +252,7 @@ Scroll
 .links a:hover {
   color: var(--clr-primary-5);
 }
+
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -384,9 +385,9 @@ footer p {
 .top-link {
   font-size: 1.25rem;
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-  background: var(--clr-secondary);
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: var(--clr-primary-5);
   width: 2rem;
   height: 2rem;
   display: grid;
@@ -423,11 +424,10 @@ footer p {
   width: auto;
 }
 #contact .contact-item {
-  width: auto;
-  padding: 20px;
+  width: 290px;
   text-align: center;
   border-radius: 20px;
-  padding: 30px;
+  padding: auto;
   margin: 30px;
   display: flex;
   justify-content: center;
@@ -440,19 +440,25 @@ footer p {
   box-shadow: 0px 0px 5px 0 #0000002c;
 }
 #contact .icon {
-  width: 50px;
+  width: 100px;
   margin: 0 auto;
-  margin-bottom: 10px;
 }
 #contact .contact-info h1 {
   font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 #contact .contact-info h2 {
   font-size: 0.9rem;
   line-height: 2rem;
-  font-weight: 400;
+  font-weight: 900;
+}
+@media screen and (min-width: 390px) {
+  #contact .contact-items {
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+  }
 }
 /*End contact Section */
 
@@ -487,7 +493,7 @@ footer p {
   padding: 10px 20px;
   font-size: 1rem;
   transition: background-color 0.5s ease;
-  background-color:var(--clr-primary-6);
+  background-color: var(--clr-primary-6);
 }
 .cta:hover {
   background-color: var(--clr-primary-1);
