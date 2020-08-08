@@ -16,11 +16,11 @@ Variables
   --clr-primary-1: hl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
   --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
+  --clr-primary-4: #2d87c8;
   /* primary/main color */
   --clr-primary-5: #49a6e9;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-6: #6ebef7;
   --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
@@ -342,9 +342,7 @@ nav {
   font-weight: 900;
 }
 .links a:hover {
-  background: var(--clr-primary-8);
   color: var(--clr-primary-5);
-  padding-left: 2.5rem;
 }
 .social-icons {
   display: none;
@@ -413,15 +411,16 @@ HomePage
   display: block;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 1%;
+  border-radius: 50%;
+  border: 2px dotted #2d87c8;
 }
 
 .backgroundimg {
   background: linear-gradient(rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.7)),
-    url("images/hero.jpeg");
+    url("images/MePic2.JPG");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -642,7 +641,7 @@ footer p {
 }
 @media screen and (max-width: 450px) {
   .social-item img {
-    filter: blur(.1px);
+    filter: blur(0.1px);
     transition: 0.3s ease filter;
   }
   .social-item:hover img {
