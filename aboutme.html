@@ -189,9 +189,10 @@
           (formbutton.q = formbutton.q || []).push(arguments);
         };
       formbutton("create", {
-        action: "https://formspree.io/YOUR_FORM_ID",
+        action: "https://formspree.io/madanyx@gmail.com",
         title: "Let's Connect!",
-        description: "We'll get back to you as soon as possible.",
+        description:
+          "Want to say hello? Need technical help? Send me a message...",
         fields: [
           {
             name: "name",
@@ -214,6 +215,18 @@
           },
         ],
         theme: "classic",
+        styles: {
+          fontFamily: '"Roboto", sans-serif;',
+          button: {
+            background: "#49a6e9",
+          },
+          title: {
+            background: "#49a6e9",
+            letterSpacing: "0.05em",
+            textTransform: "uppercase",
+          },
+        },
+        buttonImg: "<i class='fas fa-sms' style='font-size:35px'/>", // <-- new button icon
       });
     </script>
     <script src="appaboutme.js"></script>
