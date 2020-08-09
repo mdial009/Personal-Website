@@ -386,7 +386,7 @@ footer p {
   font-size: 1.25rem;
   position: fixed;
   bottom: 0.5rem;
-  right: 0.5rem;
+  left: 0.5rem;
   background: var(--clr-primary-5);
   width: 2rem;
   height: 2rem;

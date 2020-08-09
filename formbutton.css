@@ -1,0 +1,202 @@
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: 400;
+}
+
+#formbutton-shim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #49a6e9;
+}
+
+#formbutton-modalContainer {
+  position: fixed;
+  bottom: 82px;
+  right: 0;
+  margin: 22px;
+  width: 320px;
+  transform: translate(0, 5%);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+@media(max-width: 480px) {
+  #formbutton-modalContainer {
+    width: 276px;
+  }
+}
+
+#formbutton-modalContainer.visible {
+  transform: translate(0, 0);
+}
+
+#formbutton-modal {
+  background: #F9F9F8;
+  border-radius: 12px;
+  box-shadow: 5px 5px 22px rgba(22, 22, 22, 0.2);
+  line-height: 1.2;
+}
+
+#formbutton-modalTitle {
+  padding:  22px 22px;
+  background: #0d232d;
+  border-radius: 12px 12px 0 0;
+  color: #49a6e9;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#formbutton-modalTitle #wave {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+
+#formbutton-modalDescription {
+  margin: -0.75rem 22px 0;
+  padding: 1rem 1rem;
+  background: rgb(254, 254, 254);
+  box-shadow: 0 1px 3px rgba(22, 22, 22, 0.2);
+  border-radius: 3px;
+}
+
+#formbutton-modalBody {
+  padding: 22px;
+}
+
+#formbutton-formContainer {
+  position: relative;
+}
+
+#formbutton-formStatus {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: #F9F9F8;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+#formbutton-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+#formbutton-form label:not(:last-child) {
+  padding: 0 0 22px 0;
+}
+
+#formbutton-form input,
+#formbutton-form select,
+#formbutton-form textarea,
+#formbutton-form button,
+#formbutton-form #card-element {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  background: rgb(254, 254, 254);
+  margin: 0;
+}
+
+#formbutton-form input:not([type="submit"]):not([type="reset"]),
+#formbutton-form select,
+#formbutton-form textarea,
+#formbutton-form #card-element {
+  margin-top: 5px;
+  padding: 0.75rem 1rem;
+}
+
+#formbutton-form input:focus:not([type="radio"]):not([type="checkbox"]),
+#formbutton-form select:focus,
+#formbutton-form textarea:focus {
+  background: #49a6e9;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+
+#formbutton-form textarea {
+  min-height: 6rem;
+}
+
+#formbutton-form button,
+#formbutton-form [type="submit"],
+#formbutton-form [type="reset"] {
+  padding: 0.65rem 0.75rem 0.6rem;
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+#formbutton-form button:hover,
+#formbutton-form [type="submit"]:hover,
+#formbutton-form [type="reset"]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#formbutton-form button:focus,
+#formbutton-form [type="submit"]:focus,
+#formbutton-form [type="reset"]:focus {
+  outline: none;
+}
+
+#formbutton-form select {
+  text-transform: none;
+}
+
+#formbutton-form [type="checkbox"],
+#formbutton-form [type="radio"] {
+  width: auto;
+  margin: 0 0.5em 0 0 !important;
+}
+
+#formbutton-form .checkboxLabel,
+#formbutton-form .radioLabel {
+  flex-direction: row;
+}
+
+#formbutton-form .radioLabel:not(:last-of-type),
+#formbutton-form label.label {
+  padding: 0 0 11px 0;
+}
+
+#formbutton-form [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
+#formbutton-form [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
