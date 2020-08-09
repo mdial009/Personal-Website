@@ -181,6 +181,41 @@
       <i class="fas fa-arrow-up"></i>
     </a>
     <!-- javascript -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+      formbutton("create", {
+        action: "https://formspree.io/YOUR_FORM_ID",
+        title: "Let's Connect!",
+        description: "We'll get back to you as soon as possible.",
+        fields: [
+          {
+            name: "name",
+            type: "text",
+            label: "Your Name",
+            required: true,
+          },
+          {
+            name: "email",
+            type: "email",
+            label: "Your Email",
+            required: true,
+          },
+          {
+            name: "Message",
+            type: "textarea",
+          },
+          {
+            type: "submit",
+          },
+        ],
+        theme: "classic",
+      });
+    </script>
     <script src="appaboutme.js"></script>
   </body>
 </html>

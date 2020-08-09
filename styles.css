@@ -608,6 +608,9 @@ footer p {
     filter: grayscale(0);
   }
 }
+/*End Of Footer Section*/
+
+/*Dragon Ball Section*/
 .stars img {
   width: 50px;
   animation: stars 7s linear infinite;
@@ -665,3 +668,4 @@ footer p {
   animation-delay: 7s;
   width: 25px;
 }
+/*End Of Dragon Ball*/
