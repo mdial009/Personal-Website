@@ -88,9 +88,7 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.logo) {
-  width: 100%;
-}
+
 img {
   display: block;
 }
@@ -154,8 +152,8 @@ Sidebar
 
 .sidebar-toggle {
   position: fixed;
-  bottom: 1.5rem;
-  left: 1rem;
+  bottom: 0rem;
+  left: -3rem;
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
@@ -303,7 +301,7 @@ nav {
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
-  font-weight: 900;
+  font-weight: 500;
 }
 .links a:hover {
   color: var(--clr-primary-5);
