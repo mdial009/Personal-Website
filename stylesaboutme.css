@@ -385,8 +385,8 @@ footer p {
 .top-link {
   font-size: 1.25rem;
   position: fixed;
-  bottom: 0.5rem;
-  left: 0.5rem;
+  bottom: 2rem;
+  left: 1rem;
   background: var(--clr-primary-5);
   width: 2rem;
   height: 2rem;
@@ -422,6 +422,7 @@ footer p {
 }
 #contact .contact-items {
   width: auto;
+  margin-bottom: -88px;
 }
 #contact .contact-item {
   width: 290px;
@@ -473,6 +474,11 @@ footer p {
   height: 450px;
   margin: 0 auto;
 }
+.col-right {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--clr-primary-5);
+}
 
 .col-right h2 {
   font-size: 3rem;
@@ -480,23 +486,28 @@ footer p {
   color: var(--clr-primary-5);
 }
 
+.col-right p {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--clr-primary-10);
+}
+
 .cta {
   display: inline-block;
-  padding: 10px 30px;
   border: 2px double var(--clr-primary-5);
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin-top: 30px;
   color: black;
-  margin-bottom: 50px;
-  padding: 10px 20px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
   font-size: 1rem;
   transition: background-color 0.5s ease;
-  background-color: var(--clr-primary-6);
+  background-color: var(--clr-primary-9);
+  margin-top: -330px;
 }
 .cta:hover {
-  background-color: var(--clr-primary-1);
+  background-color: var(--clr-primary-6);
 }
 .about-img {
   height: auto;
@@ -516,3 +527,18 @@ footer p {
   z-index: -1;
 }
 /* End About Section */
+
+iframe .Resume {
+  -moz-transform: scale(0.95, 0.95);
+  -webkit-transform: scale(0.95, 0.95);
+  -o-transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+  margin: -30px;
+  margin-bottom: -70px;
+}
+@media screen and (max-width: 1090px) {
+  iframe {
+    display: none;
+  }
+}
