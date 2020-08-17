@@ -669,3 +669,98 @@ footer p {
   width: 25px;
 }
 /*End Of Dragon Ball*/
+
+/*Custom Cursor*/
+.cursor {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.cursor::after,
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-primary-5);
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+}
+.cursor::before {
+  background-color: var(--clr-primary-5);
+}
+.cursor.click::before {
+  animation: click 1s ease forwards;
+  background-color: var(--clr-primary-5);
+}
+@keyframes click {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(7);
+  }
+}
+/*End Of Custom Cursor*/
+
+.quote-box {
+  text-align: center;
+  height: auto;
+  position: absolute;
+  left: 44%;
+  bottom: 19%;
+  margin-left: -100px;
+}
+
+.quote-text {
+  min-height: 1vh;
+}
+
+.quote-box h1 {
+  font-size: 5px;
+  text-align: left;
+}
+
+.quote-box p {
+  text-transform: capitalize;
+  color: #fff;
+  text-align: right;
+  font-style: italic;
+  font-size: 30px;
+}
+
+#quote-btn {
+  margin-top: auto;
+  font-size: 20px;
+  padding: 1px 3px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: var(--clr-primary-5);
+}
+
+#quote-btn:hover {
+  color: var(--clr-primary-5);
+  background-color: var(--clr-primary-10);
+}
+
+@media screen and (min-width: 1000px) {
+  .quote-box {
+    text-align: center;
+    background-color: #fff;
+    height: auto;
+    position: absolute;
+    left: 49%;
+    bottom: 19%;
+    margin-left: -100px;
+  }
+}
