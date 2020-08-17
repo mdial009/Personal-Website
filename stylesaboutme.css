@@ -369,6 +369,7 @@ footer p {
 .social-item:hover img {
   filter: grayscale(0);
 }
+
 @media screen and (max-width: 450px) {
   .social-item img {
     filter: blur(0.1px);

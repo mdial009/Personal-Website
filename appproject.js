@@ -30,6 +30,7 @@ const menu = [
     title: "Virtual Assistant",
     category: "Python",
     img: "./images/VirtualAssistant.jpg",
+    link: "https://github.com/mdial009/VirtualAssistant",
     desc: `This is a Virtual Assistant program that gets the date, current time, Respond back with a random greeting, and return information on a person.
 
     `,
@@ -38,8 +39,19 @@ const menu = [
     id: 4,
     title: "ICM = Image Classification Machine",
     category: "Python",
+    link: "https://github.com/mdial009/ICM",
     img: "./images/ICM.jpg",
     desc: ` Used the tensorflow libaray to train the AI and based on data and take that data to classify a image. Then used Numpy to turn data into an array and make it easier for the AI to class the image. After that I used skimage to resize a image, and finally pyplot to show the image `,
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    category: "HTML",
+    category2: "CSS",
+    category3: "Javascript",
+    link: "https://mdial009.github.io/",
+    img: "./images/PortfolioWebsite.png",
+    desc: `Personal Portfolio Website Deployed by github pages`,
   },
 ];
 // get parent element
@@ -53,8 +65,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
-    // console.log(item);
-
     return `<article class="menu-item">
           <img src=${item.img} alt=${item.title} class="photo" />
           <div class="item-info">
@@ -79,7 +89,7 @@ function displayMenuButtons() {
       }
       return values;
     },
-    ["all"]
+    ["all", "Unity", "C#", "CSS", "Javascript"]
   );
   const categoryBtns = categories
     .map(function (category) {
