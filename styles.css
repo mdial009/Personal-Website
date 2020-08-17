@@ -714,33 +714,36 @@ footer p {
 /*End Of Custom Cursor*/
 
 .quote-box {
-  text-align: center;
-  height: auto;
+  position: relative;
   position: absolute;
-  left: 44%;
-  bottom: 19%;
-  margin-left: -100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .quote-text {
   min-height: 1vh;
 }
 
-.quote-box h1 {
-  font-size: 5px;
-  text-align: left;
+.quote-box h3 {
+  font-size: 15px;
+  color: var(--clr-primary-10);
 }
 
 .quote-box p {
   text-transform: capitalize;
-  color: #fff;
-  text-align: right;
-  font-style: italic;
-  font-size: 30px;
+  color: var(--clr-primary-5);
+  font-size: 15px;
 }
 
+.quote-box-btn {
+  position: relative;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #quote-btn {
-  margin-top: auto;
   font-size: 20px;
   padding: 1px 3px;
   text-transform: uppercase;
@@ -753,14 +756,19 @@ footer p {
   background-color: var(--clr-primary-10);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 500px) {
   .quote-box {
-    text-align: center;
-    background-color: #fff;
-    height: auto;
+    position: relative;
     position: absolute;
-    left: 49%;
-    bottom: 19%;
-    margin-left: -100px;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .quote-box-btn {
+    position: relative;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
