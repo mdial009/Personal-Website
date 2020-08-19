@@ -202,12 +202,301 @@ let quotes = [
     author: "Soldier 76",
   },
   {
-    quote: "",
-    author: "",
+    quote: "Never stop fighting for what you believe in.",
+    author: "Ana",
   },
   {
-    quote: "",
-    author: "",
+    quote: "It's just a scratch. You'll be fine.",
+    author: "Ana",
+  },
+  {
+    quote: "Ever get that feeling of déjà vu?",
+    author: "Tracer",
+  },
+  {
+    quote: "With every death, comes honor. With honor, redemption.",
+    author: "Hanzo",
+  },
+  {
+    quote: "Simple geometry",
+    author: "Hanzo",
+  },
+  {
+    quote: "From one thing, know ten thousand things.",
+    author: "Hanzo",
+  },
+  {
+    quote: "Defeat... is the first step to a better result.",
+    author: "Hanzo",
+  },
+  {
+    quote: "Master your fears as they master you.",
+    author: "Hanzo",
+  },
+  {
+    quote: "There is beauty in simplicity.",
+    author: "Hanzo",
+  },
+  {
+    quote: "Strength flows through me!",
+    author: "Genji",
+  },
+  {
+    quote: "A steady blade balances the soul.",
+    author: "Genji",
+  },
+  {
+    quote: "To know yourself, is to be at peace.",
+    author: "Genji",
+  },
+  {
+    quote: "我が心明鏡止水",
+    author: "Genji",
+  },
+  {
+    quote: "Together, we are strong.",
+    author: "Zarya",
+  },
+  {
+    quote: "Just like in training: visualize, then execute.",
+    author: "Zarya",
+  },
+  {
+    quote: "Don’t just stand around; do something.",
+    author: "Zarya",
+  },
+  {
+    quote: "True strength is hard work and determination, not augmentation!",
+    author: "Zarya",
+  },
+  {
+    quote: "Only through conflict do we evolve.",
+    author: "Doomfist",
+  },
+  {
+    quote: "Lose the battle, win the war.",
+    author: "Doomfist",
+  },
+  {
+    quote: "Defeat makes me stronger.",
+    author: "Doomfist",
+  },
+  {
+    quote: "I take it on the chin.",
+    author: "Doomfist",
+  },
+  {
+    quote: "Once the mission starts, no more messing around.",
+    author: "Doomfist",
+  },
+  {
+    quote: "Justice ain't gonna dispense itself.",
+    author: "McCree",
+  },
+  {
+    quote: "I feel like a man possessed!",
+    author: "McCree",
+  },
+  {
+    quote: "I'm not good, not bad, but I sure as hell ain't ugly.",
+    author: "McCree",
+  },
+  {
+    quote: "Reach for the sky.",
+    author: "McCree",
+  },
+  {
+    quote: "Buckle up, this gunslinger's loaded!",
+    author: "McCree",
+  },
+  {
+    quote: "Well, it's high noon somewhere in the world.",
+    author: "McCree",
+  },
+  {
+    quote: "I'm not much for standin' around.",
+    author: "McCree",
+  },
+  {
+    quote: "Quit lollygagging, get on the point!",
+    author: "McCree",
+  },
+  {
+    quote: "Everything can be hacked, and everyone.",
+    author: "Sombra",
+  },
+  {
+    quote: "We all make mistakes.",
+    author: "Sombra",
+  },
+  {
+    quote: "The true enemy of humanity is disorder.",
+    author: "Symmetra",
+  },
+  {
+    quote: "I will correct my mistakes",
+    author: "Symmetra",
+  },
+  {
+    quote: "Hard work and dedication pays off.",
+    author: "Symmetra",
+  },
+  {
+    quote: "I’ve taken your opinion under advisement.",
+    author: "Symmetra",
+  },
+  {
+    quote: "If everyone performs their function, victory is assured.",
+    author: "Symmetra",
+  },
+  {
+    quote: "Do not deviate from the plan and victory will soon be ours.",
+    author: "Symmetra",
+  },
+  {
+    quote: "You have to watch out for the one percent.",
+    author: "Ashe",
+  },
+  {
+    quote: "I stick up for my crew.",
+    author: "Ashe",
+  },
+  {
+    quote: "We have an understanding.",
+    author: "Ashe",
+  },
+  {
+    quote: "Smoke 'em outta there.",
+    author: "Ashe",
+  },
+  {
+    quote: "You're gettin' me riled up.	",
+    author: "Ashe",
+  },
+  {
+    quote: "Time to change things up.	",
+    author: "Ashe",
+  },
+  {
+    quote: "Nothing wrong with a little self improvement.	",
+    author: "Ashe",
+  },
+  {
+    quote: "Get too close to the sun, you're gonna burn!	",
+    author: "Ashe",
+  },
+  {
+    quote: "There's no stoppin' me once I get into a rhythm!	",
+    author: "Ashe",
+  },
+  {
+    quote: "I get the idea.	",
+    author: "Ashe",
+  },
+  {
+    quote: "There’s still fight in me yet!",
+    author: "Reinhardt",
+  },
+  {
+    quote: "Don't worry, my friends! I will be your shield!",
+    author: "Reinhardt",
+  },
+  {
+    quote: "Do I have your attention yet?",
+    author: "Reinhardt",
+  },
+  {
+    quote: "Bring me another!",
+    author: "Reinhardt",
+  },
+  {
+    quote: "To see justice done, is it’s own reward!",
+    author: "Reinhardt",
+  },
+  {
+    quote: "Respect your elders.",
+    author: "Reinhardt",
+  },
+  {
+    quote: "Fortune favors the bold.",
+    author: "Reinhardt",
+  },
+  {
+    quote: "That which doesn't kill you... makes you stronger.",
+    author: "Reaper",
+  },
+  {
+    quote: "Actions have Consequences.",
+    author: "Reaper",
+  },
+  {
+    quote: "No shortcuts, just hard work.",
+    author: "Brigitte",
+  },
+  {
+    quote: "There’s no prize for coming in second!",
+    author: "Torbjörn",
+  },
+  {
+    quote: "I'm giving it all I've got!",
+    author: "Torbjörn",
+  },
+  {
+    quote: "You're making a chicken out of a feather.",
+    author: "Torbjörn",
+  },
+  {
+    quote: "Our world is worth fighting for.",
+    author: "Mei",
+  },
+  {
+    quote: "A-Mei-zing!",
+    author: "Mei",
+  },
+  {
+    quote: "Overcome all obstacles.",
+    author: "Mei",
+  },
+  {
+    quote: "Look at this team; we’re gonna do great!",
+    author: "Lucio",
+  },
+  {
+    quote: "Come on, keep your head up.",
+    author: "Lucio",
+  },
+  {
+    quote:
+      "Statistically speaking, I usually get most of my team back alive, but who's counting?",
+    author: "Baptiste",
+  },
+  {
+    quote: "Imagine the worst possible outcome. Now… avoid that.	",
+    author: "Baptiste",
+  },
+  {
+    quote: "Buckle down! Get it done!	",
+    author: "Baptiste",
+  },
+  {
+    quote: "Ann kòmanse bagay yo.",
+    author: "Baptiste",
+  },
+  {
+    quote: "That could have gone better.",
+    author: "Baptiste",
+  },
+  {
+    quote: "Ann kenbe atitid pozitif lan.",
+    author: "Baptiste",
+  },
+  {
+    quote: "Pick yourself up, dust yourself off.",
+    author: "Baptiste",
+  },
+  {
+    quote: "Imagination is the essence of discovery.",
+    author: "Winston",
   },
 ];
 
