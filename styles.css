@@ -713,6 +713,7 @@ footer p {
 }
 /*End Of Custom Cursor*/
 
+/* Quote */
 .quote-box {
   position: relative;
   position: absolute;
@@ -739,39 +740,54 @@ footer p {
 .quote-box-btn {
   position: relative;
   position: absolute;
-  top: 55%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 #quote-btn {
-  font-size: 20px;
-  padding: 1px 3px;
   text-transform: uppercase;
-  background-color: #fff;
-  color: var(--clr-primary-5);
+  background-color: var(--clr-primary-5);
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 #quote-btn:hover {
-  color: var(--clr-primary-5);
-  background-color: var(--clr-primary-10);
+  color: white;
 }
-
+#quote-btn:active {
+  background-color: #6ebef7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 @media screen and (max-width: 500px) {
   .quote-box {
     position: relative;
     position: absolute;
-    top: 74%;
+    top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 350px;
   }
   .quote-box-btn {
     position: relative;
     position: absolute;
-    top: 82%;
+    top: 79%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
+/* End Of Quote */
+
+/* Tooltip */
 .all-tooltip {
   height: 100%;
   width: 100%;
@@ -781,7 +797,7 @@ footer p {
 
 .tooltip-content {
   position: absolute;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--clr-primary-5);
   box-shadow: 0px 0px 20px #00000020;
   padding: 30px;
   border-radius: 8px;
@@ -796,7 +812,7 @@ footer p {
   width: 10px;
   height: 10px;
   border: 10px solid transparent;
-  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-color: var(--clr-primary-5);
   top: 0px;
   left: 50%;
   transform: translate(-50%, -100%) rotate(0deg);
@@ -808,7 +824,7 @@ footer p {
   left: 80%;
   height: 25px;
   width: 25px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--clr-primary-5);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -819,7 +835,7 @@ footer p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--clr-primary-5);
   border-radius: 50%;
   animation: puls-effect 1s ease infinite;
 }
@@ -832,11 +848,11 @@ footer p {
 /* Custom Style for tooltip-1 */
 
 .tooltip-1 .pin {
-  top: 40%;
+  top: 10%;
   left: 82%;
   height: 15px;
   width: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--clr-primary-5);
 }
 .tooltip-1 .tooltip-content {
   display: flex;
@@ -844,7 +860,7 @@ footer p {
   align-items: stretch;
   justify-content: center;
   padding: 0;
-  background-color: var(--clr-primary-2);
+  background-color: var(--clr-primary-5);
 }
 .tooltip-1.active .tooltip-content {
   display: flex;
@@ -864,7 +880,6 @@ footer p {
   font-size: 14px;
 }
 .tooltip-1 .tooltip-content .content button {
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 400;
   border: none;
@@ -881,8 +896,8 @@ footer p {
 /* custom style for tooltip-2 */
 
 .tooltip-2 .pin {
-  top: 80%;
-  left: 35%;
+  top: 10%;
+  left: 15%;
   height: 15px;
   width: 15px;
 }
@@ -890,10 +905,9 @@ footer p {
   margin: 20px 0;
 }
 .tooltip-2 .tooltip-content {
-  background-color: aliceblue;
+  background-color: var(--clr-primary-5);
 }
 .tooltip-2 .tooltip-content button {
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 400;
   border: none;
@@ -949,3 +963,4 @@ footer p {
     width: 100%;
   }
 }
+/* End Of Tooltip */
