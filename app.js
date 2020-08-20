@@ -498,6 +498,10 @@ let quotes = [
     quote: "Imagination is the essence of discovery.",
     author: "Winston",
   },
+  {
+    quote: "Can't Stop Won't Stop",
+    author: "Lucio",
+  },
 ];
 
 const quotebtn = document.getElementById("quote-btn");
@@ -571,5 +575,4 @@ tooltips.forEach((tooltip) => {
     }, 1000);
   });
 });
-
 // ********** End Of Tooltips ************
