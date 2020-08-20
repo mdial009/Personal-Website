@@ -10,6 +10,8 @@ Head over to mdial009.github.io and you can check it out.
 * Advanced my Knowledge on the CSS Trick(Animation, Media Query
 * Advanced my HTML my knowledge of of different tags 
 * Advanced my knowledge in Javascript
+[mdial009.github.io](other_file.md)
+
 
 
 ## Acknowledgments
