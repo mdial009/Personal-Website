@@ -293,12 +293,12 @@ Scroll
 
 /* hero */
 header {
-  min-height: 0.1vh;
+  min-height: 0.001vh;
   background: linear-gradient(#1a6aa2, rgba(0, 0, 0, 0.1)),
     url(./images/hero-bcg.jpeg) center/cover no-repeat;
 }
 .banner {
-  min-height: 1vh;
+  min-height: 0.001vh;
   display: grid;
   place-items: center;
   text-align: center;
@@ -488,8 +488,8 @@ footer p {
 }
 
 .col-right p {
-  font-size: 1rem;
-  font-weight: 900;
+  font-size: 1.1rem;
+  font-weight: 100;
   color: var(--clr-primary-10);
 }
 
