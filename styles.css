@@ -716,11 +716,9 @@ footer p {
 
 /* Quote */
 .quote-box {
-  position: relative;
   position: absolute;
-  top: 51%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 49%;
+  left: 37%;
 }
 
 .quote-box h3 {
@@ -735,31 +733,20 @@ footer p {
 }
 
 .quote-box-btn {
-  position: relative;
   position: absolute;
   top: 56%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 48%;
 }
 #quote-btn {
-  text-transform: uppercase;
-  background-color: var(--clr-primary-5);
-  display: inline-block;
   padding: 1px 5px;
-  font-size: 20px;
   cursor: pointer;
-  text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
   border: none;
-  border-radius: 15px;
+  border-radius: 105px;
   box-shadow: 0 9px #999;
 }
 
-#quote-btn:hover {
-  color: white;
-}
 #quote-btn:active {
   background-color: #6ebef7;
   box-shadow: 0 5px #666;
@@ -767,30 +754,17 @@ footer p {
 }
 @media screen and (max-width: 500px) {
   .quote-box {
-    position: relative;
-    position: absolute;
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
+    top: 65%;
+    left: 3%;
   }
   .quote-box-btn {
-    position: relative;
-    position: absolute;
-    top: 79%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 73%;
+    left: 41%;
   }
 }
 /* End Of Quote */
 
 /* Tooltip */
-.all-tooltip {
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
 
 .tooltip-content {
   position: absolute;
@@ -926,7 +900,7 @@ footer p {
   height: 15px;
   width: 15px;
 }
-/* Custom style for tooltip-4 */
+/* Custom style for tooltip-4 
 
 .tooltip-4 .pin {
   top: 80%;
@@ -934,7 +908,7 @@ footer p {
   height: 15px;
   width: 15px;
 }
-
+*/
 /* Puls Effect For Pins */
 
 @keyframes puls-effect {
@@ -961,3 +935,6 @@ footer p {
   }
 }
 /* End Of Tooltip */
+@media screen and (min-width: 100){
+  
+}
