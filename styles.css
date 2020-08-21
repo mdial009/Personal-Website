@@ -717,9 +717,11 @@ footer p {
 
 /* Quote */
 .quote-box {
+  position: relative;
   position: absolute;
-  top: 49%;
-  left: 37%;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .quote-box h3 {
@@ -733,10 +735,12 @@ footer p {
   font-size: 15px;
 }
 
-.quote-box-btn {
+.the-quote-box-btn {
+  position: relative;
   position: absolute;
   top: 56%;
-  left: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #quote-btn {
   padding: 1px 5px;
@@ -745,7 +749,8 @@ footer p {
   outline: none;
   border: none;
   border-radius: 105px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px #999999;
+  background-color: var(--clr-primary-5);
 }
 
 #quote-btn:active {
@@ -753,20 +758,17 @@ footer p {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .quote-box {
-    top: 65%;
-    left: 3%;
+    display: none;
   }
   .quote-box-btn {
-    top: 73%;
-    left: 41%;
+    display: none;
   }
 }
 /* End Of Quote */
 
 /* Tooltip */
-
 .tooltip-content {
   position: absolute;
   background-color: var(--clr-primary-5);
@@ -935,7 +937,6 @@ footer p {
     width: 100%;
   }
 }
-/* End Of Tooltip */
 @media screen and (max-width: 1000px) {
   .tooltip-1 .pin {
     display: none;
@@ -947,3 +948,4 @@ footer p {
     display: none;
   }
 }
+/* End Of Tooltip */
