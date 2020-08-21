@@ -46,7 +46,7 @@ Variables
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
+  --transition: all 0.4s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -70,7 +70,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -225,11 +225,9 @@ Scroll
 }
 .nav-toggle:hover {
   color: var(--clr-primary-5);
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
-.logo {
-  height: 30px;
-}
+
 .links-container {
   height: 0;
   overflow: hidden;
