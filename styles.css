@@ -936,4 +936,14 @@ footer p {
   }
 }
 /* End Of Tooltip */
-
+@media screen and (max-width: 1000px) {
+  .tooltip-1 .pin {
+    display: none;
+  }
+  .tooltip-2 .pin {
+    display: none;
+  }
+  .tooltip-3 .pin {
+    display: none;
+  }
+}
