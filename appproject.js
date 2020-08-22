@@ -1,7 +1,4 @@
-/*
-Project Section
-*/
-
+// ********** Project Section ************
 const menu = [
   {
     id: 1,
@@ -54,6 +51,8 @@ const menu = [
     desc: `Personal Portfolio Website Deployed by github pages`,
   },
 ];
+// ********** Project Section (Filiter) ************
+
 // get parent element
 const sectionCenter = document.querySelector(".section-centermenu");
 const btnContainer = document.querySelector(".btn-containermenu");
@@ -128,28 +127,7 @@ function displayMenuButtons() {
   });
 }
 
-/*
-Nav/Sidebar Section
-*/
-
-const toggleBtn = document.querySelector(".sidebar-toggle");
-const closeBtn = document.querySelector(".close-btn");
-const sidebar = document.querySelector(".sidebar");
-
-toggleBtn.addEventListener("click", function () {
-  sidebar.classList.toggle("show-sidebar");
-});
-
-closeBtn.addEventListener("click", function () {
-  sidebar.classList.remove("show-sidebar");
-});
-
-// classlist - show/gets all classes
-// contains - checks classList for specific class
-// add - add class
-// remove - remove class
-// toggle - toggle class
-
+// ********** Nav Section ************
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
@@ -161,6 +139,7 @@ navToggle.addEventListener("click", function (e) {
   }
 });
 
+// ********** Dark Mode ************
 function applyTheme(theme) {
   document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
   document.body.classList.add(`theme-${theme}`);
@@ -177,9 +156,7 @@ const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 // ********** End Of Set Date ************
 
-
 // ********** Cursor ************
-
 const cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e) => {

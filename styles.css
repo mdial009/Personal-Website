@@ -135,20 +135,8 @@ p {
   h2,
   h3,
   h4 {
-    line-height: 1;
+    line-height: 0.9;
   }
-}
-
-/*
-=============== 
-Sidebar
-===============
-*/
-.close-btn {
-  display: none;
-}
-.sidebar-toggle {
-  display: none;
 }
 /*
 =============== 
@@ -219,7 +207,6 @@ nav {
     padding: 0.25rem;
     padding-right: 410px;
   }
-
   .nav-header {
     padding: 0;
   }
@@ -240,7 +227,6 @@ nav {
     background: transparent;
   }
 }
-
 /*
 =============== 
 HomePage
@@ -250,8 +236,6 @@ HomePage
 /* Image */
 .image img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0.1%;
@@ -260,7 +244,7 @@ HomePage
 }
 
 .backgroundimg {
-  background: linear-gradient(rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.7)),
+  background: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)),
     url("images/MePic2.JPG");
   background-size: cover;
   height: 100%;
@@ -355,7 +339,7 @@ HomePage
     color: var(--clr-primary-5);
   }
 }
-/* Phone css For index*/
+/* iPhone css */
 @media screen and (max-width: 450px) {
   .centerthis {
     position: absolute;
@@ -390,11 +374,12 @@ HomePage
     animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3.5s;
   }
-  .sidebar-toggle {
-    display: none;
-  }
 }
-
+/*
+=============== 
+Darkmode
+===============
+*/
 /*Dark Mode*/
 body.theme-dark {
   --background-color: var(--dark-background-color);
@@ -411,47 +396,11 @@ body.theme-dark {
     --text-color: var(--dark-text-color);
   }
 }
-/* AboutMe 
-.AboutMeContent {
-  background: var(--clr-primary-5);
-  padding: 0.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
-  max-width: var(--fixed-width);
-  position: center;
-}
-.AboutMeTitle {
-  background: var(--clr-primary-5);
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
-  text-align: center;
-  max-width: var(--fixed-width);
-}
-.AboutMeBanner {
-  display: grid;
-  place-items: center;
-}
+/*
+=============== 
+Footer
+===============
 */
-/* ContactMe 
-.ContactMeBanner {
-  display: grid;
-  place-items: center;
-}
-.ContactMeTitle {
-  background: var(--clr-primary-5);
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
-  max-width: var(--fixed-width);
-}
-.ContactMeContent {
-  background: var(--clr-primary-5);
-  padding: 0.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
-  max-width: var(--fixed-width);
-  position: center;
-} */
-
 /*Footer*/
 footer {
   background: var(--clr-primary-5);
@@ -491,6 +440,11 @@ footer p {
 }
 /*End Of Footer Section*/
 
+/*
+=============== 
+Extras
+===============
+*/
 /*Dragon Ball Section*/
 .stars img {
   width: 50px;
@@ -600,7 +554,7 @@ footer p {
 .quote-box {
   position: relative;
   position: absolute;
-  top: 51%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -619,7 +573,7 @@ footer p {
 .the-quote-box-btn {
   position: relative;
   position: absolute;
-  top: 56%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -660,7 +614,6 @@ footer p {
   max-width: 300px;
   opacity: 0;
   pointer-events: none;
-  /* left: -50%; */
 }
 .tooltip-content .arrow {
   position: absolute;
@@ -703,8 +656,8 @@ footer p {
 /* Custom Style for tooltip-1 */
 
 .tooltip-1 .pin {
-  top: 10%;
-  left: 82%;
+  top: 62%;
+  left: 49%;
   height: 15px;
   width: 15px;
   background-color: var(--clr-primary-5);
@@ -779,10 +732,10 @@ footer p {
 /* Custom style for tooltip-3 */
 
 .tooltip-3 .pin {
-  top: 22%;
-  left: 49%;
   height: 15px;
   width: 15px;
+  top: 10%;
+  left: 82%;
 }
 /* Custom style for tooltip-4 
 
