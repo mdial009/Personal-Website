@@ -1,26 +1,4 @@
-const toggleBtn = document.querySelector(".sidebar-toggle");
-const closeBtn = document.querySelector(".close-btn");
-const sidebar = document.querySelector(".sidebar");
-
-toggleBtn.addEventListener("click", function () {
-  if (sidebar.classList.contains("show-sidebar")) {
-    sidebar.classList.remove("show-sidebar");
-  } else {
-    sidebar.classList.add("show-sidebar");
-  }
-  //sidebar.classList.toggle("show-sidebar");
-});
-
-closeBtn.addEventListener("click", function () {
-  sidebar.classList.remove("show-sidebar");
-});
-
-// classlist - show/gets all classes
-// contains - checks classList for specific class
-// add - add class
-// remove - remove class
-// toggle - toggle class
-
+// ********** Nav Toggle ************
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
@@ -31,7 +9,7 @@ navToggle.addEventListener("click", function (e) {
     links.classList.add("show-links");
   }
 });
-
+// ********** Dark Mode ************
 function applyTheme(theme) {
   document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
   document.body.classList.add(`theme-${theme}`);
@@ -83,7 +61,6 @@ window.addEventListener("click", () => {
 // ********** End Of Cursor ************
 
 // ********** Quotes ************
-
 let quotes = [
   {
     quote: "Science will reveal the truth.",
@@ -518,7 +495,6 @@ function getQuote() {
 // ********** End Of Quotes ************
 
 // ********** Tooltips ************
-
 const tooltips = document.querySelectorAll(".all-tooltip .tooltip");
 const fullDiv = document.querySelector("section");
 const container = document.querySelector(".container");
