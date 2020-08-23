@@ -457,6 +457,7 @@ Extras
   align-items: center;
   justify-content: space-around;
   position: absolute;
+  z-index: -1;
   bottom: 0;
 }
 @keyframes stars {
