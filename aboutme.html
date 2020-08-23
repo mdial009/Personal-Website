@@ -95,11 +95,13 @@
               seamless
               class="Resume"
             ></iframe>
-            <p></p>
-            <a href="" class="cta" download="Resume.pdf">Download Resume</a>
+            <div class="main-content">
+              <a href="" class="cta item button-jittery" download="Resume.pdf"
+                >Download Resume</a
+              >
+            </div>
           </div>
         </div>
-        <!-- End About Section -->
       </div>
     </section>
     <!-- contact info -->
@@ -126,8 +128,10 @@
             </div>
             <div class="contact-info">
               <h1>Email</h1>
-              <h2>Madanyx@gmail.com</h2>
-              <h2>madanydiallo@aol.com</h2>
+              <h2><a href="mailto:madanyx@gmail.com">Madanyx@gmail.com</a></h2>
+              <h2>
+                <a href="mailto:madanydiallo@aol.com">Madanydiallo@aol.com</a>
+              </h2>
             </div>
           </div>
           <div class="contact-item">
@@ -144,6 +148,58 @@
         </div>
       </div>
     </section>
+    <a class="scroll-link top-link" href="#home">
+      <img src="https://img.icons8.com/bubbles/50/000000/up.png"/></img>
+    </a>
+    <!-- javascript -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+      formbutton("create", {
+        action: "https://formspree.io/madanyx@gmail.com",
+        title: "Let's Connect!",
+        description:
+          "Want to say hello? Need technical help? Send me a message...",
+        fields: [
+          {
+            name: "name",
+            type: "text",
+            label: "Your Name",
+            required: true,
+          },
+          {
+            name: "email",
+            type: "email",
+            label: "Your Email",
+            required: true,
+          },
+          {
+            name: "Message",
+            type: "textarea",
+          },
+          {
+            type: "submit",
+          },
+        ],
+        theme: "classic",
+        styles: {
+          fontFamily: '"Roboto", sans-serif;',
+          button: {
+            background: "#49a6e9",
+          },
+          title: {
+            background: "#49a6e9",
+            letterSpacing: "0.05em",
+            textTransform: "uppercase",
+          },
+        },
+        buttonImg: "<img src=https://img.icons8.com/bubbles/500/000000/gmail.png/>", // <-- new button icon
+      });
+    </script>
     <!-- footer -->
     <footer>
       <div class="social-icon">
@@ -205,59 +261,6 @@
         <span id="date"></span>. all rights reserved
       </p>
     </footer>
-    <!-- End Of Footer -->
-    <a class="scroll-link top-link" href="#home">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- javascript -->
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-      window.formbutton =
-        window.formbutton ||
-        function () {
-          (formbutton.q = formbutton.q || []).push(arguments);
-        };
-      formbutton("create", {
-        action: "https://formspree.io/madanyx@gmail.com",
-        title: "Let's Connect!",
-        description:
-          "Want to say hello? Need technical help? Send me a message...",
-        fields: [
-          {
-            name: "name",
-            type: "text",
-            label: "Your Name",
-            required: true,
-          },
-          {
-            name: "email",
-            type: "email",
-            label: "Your Email",
-            required: true,
-          },
-          {
-            name: "Message",
-            type: "textarea",
-          },
-          {
-            type: "submit",
-          },
-        ],
-        theme: "classic",
-        styles: {
-          fontFamily: '"Roboto", sans-serif;',
-          button: {
-            background: "#49a6e9",
-          },
-          title: {
-            background: "#49a6e9",
-            letterSpacing: "0.05em",
-            textTransform: "uppercase",
-          },
-        },
-        buttonImg: "<i class='fas fa-sms' style='font-size:35px'/>", // <-- new button icon
-      });
-    </script>
     <script src="appaboutme.js"></script>
   </body>
 </html>

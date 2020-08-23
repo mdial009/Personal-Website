@@ -73,7 +73,7 @@ body {
   font-family: var(--ff-primary);
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
-  line-height: 1.5;
+  line-height: 1;
   font-size: 0.875rem;
 }
 ul {
@@ -138,8 +138,11 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
-
+/*
+=============== 
+Button/Section
+===============
+*/
 .btn {
   text-transform: uppercase;
   background: transparent;
@@ -296,8 +299,7 @@ header {
     url(./images/hero-bcg.jpeg) center/cover no-repeat;
 }
 .banner {
-  min-height: 0.001vh;
-  display: grid;
+  min-height: 0.01vh;
   place-items: center;
   text-align: center;
 }
@@ -340,7 +342,7 @@ header {
 /*Footer*/
 footer {
   background: var(--clr-primary-5);
-  width: 500px;
+  width: auto;
   margin: 0 auto;
   position: fixed;
   bottom: 0;
@@ -584,3 +586,67 @@ iframe .Resume {
   }
 }
 /*End Of Custom Cursor*/
+
+/* Custom Button */
+
+.main-content {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.item {
+  grid-template-rows: 1fr min-content;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--clr-primary-5);
+  background: transparent;
+  border: 4px solid var(--clr-primary-5);
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.button-jittery {
+  animation: jittery 4s infinite;
+}
+.button-jittery:hover {
+  animation: heartbeat 0.2s infinite;
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
+}
+@keyframes heartbeat {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* End Of Custom Button */

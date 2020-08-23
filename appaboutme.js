@@ -106,7 +106,6 @@ window.addEventListener("click", () => {
 });
 // ********** End OF Cursor ************
 
-
 // ********** Word Scrambler ************
 const resolver = {
   resolve: function resolve(options, callback) {
@@ -240,9 +239,7 @@ const options = {
 
 // Callback function when resolve completes
 function callback() {
-  setTimeout(() => {
-    resolver.resolve(nextOptions, callback);
-  }, 1000);
+  setTimeout(() => {}, 1000);
 }
 resolver.resolve(options, callback);
 // ********** End Of Word Scrambler ************

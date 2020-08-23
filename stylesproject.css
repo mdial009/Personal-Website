@@ -117,9 +117,7 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
-p {
-  margin-bottom: 1.25rem;
-}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -201,7 +199,7 @@ nav {
 }
 /* TOGGLE CLASS */
 .show-links {
-  height: 8.5rem;
+  height: 8.9rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -671,3 +669,39 @@ Extras
   }
 }
 /*End Of Custom Cursor*/
+
+/* Custom Button */
+.button-typewriter p {
+  animation: typing 3s steps(15) infinite;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.button-typewriter .button__wrapper:hover p {
+  animation: blink 0.3s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  55%,
+  65%,
+  75% {
+    opacity: 1;
+  }
+  60%,
+  70% {
+    opacity: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* End Of Custom Button */
