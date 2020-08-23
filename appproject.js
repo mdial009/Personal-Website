@@ -92,9 +92,10 @@ function displayMenuButtons() {
   );
   const categoryBtns = categories
     .map(function (category) {
-      return `<button type="button" class="filter-btn" data-id=${category}>
-          ${category}
-        </button>`;
+      return `<div class="button-typewriter">
+         <button class="filter-btn" data-id=${category}><p> ${category}</p>
+      </button> 
+    </div>`;
     })
     .join("");
 
