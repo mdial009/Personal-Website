@@ -542,26 +542,7 @@ Extras
     display: none;
   }
 }
-@media (-moz-os-version: windows-xp),
-  (-moz-os-version: windows-vista),
-  (-moz-os-version: windows-win7),
-  (-moz-os-version: windows-win8),
-  (-moz-os-version: windows-win10) {
-  .quote-box {
-    position: relative;
-    position: absolute;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .the-quote-box-btn {
-    position: relative;
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
+
 /* End Of Quote */
 
 /* Tooltip */
