@@ -510,7 +510,7 @@ Extras
 .quote-box {
   position: relative;
   position: absolute;
-  top: 46%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -529,7 +529,7 @@ Extras
 .the-quote-box-btn {
   position: relative;
   position: absolute;
-  top: 52%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
