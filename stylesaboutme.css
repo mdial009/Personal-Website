@@ -201,16 +201,11 @@ Scroll
 }
 .nav-toggle:hover {
   color: var(--clr-primary-5);
-  animation: mymove 1s;
-}
-@keyframes mymove {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 @media (hover: hover) and (pointer: fine) {
-  nav a:hover {
-    background: yellow;
+  .nav-toggle:hover {
+    color: var(--clr-primary-5);
+    transform: rotate(360);
   }
 }
 
