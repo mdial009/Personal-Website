@@ -456,7 +456,7 @@ Extras
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   bottom: 0;
 }
