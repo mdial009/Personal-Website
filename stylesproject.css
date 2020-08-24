@@ -239,7 +239,7 @@ Projects
 */
 .backgroundimg {
   background: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)),
-    url("images/hero.jpeg");
+    url(images/octavian-dan-b21Ty33CqVs-unsplash.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
