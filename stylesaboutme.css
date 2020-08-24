@@ -177,6 +177,9 @@ Scroll
   width: 100%;
   box-shadow: var(--light-shadow);
 }
+.fixed-nav:hover {
+  transform: rotate(360deg);
+}
 .fixed-nav .links a {
   color: var(--clr-primary-5);
 }
@@ -198,15 +201,11 @@ Scroll
   background: transparent;
   border-color: transparent;
   cursor: pointer;
+  transition: transform 1s;
 }
 .nav-toggle:hover {
   color: var(--clr-primary-5);
-}
-@media (hover: hover) and (pointer: fine) {
-  .nav-toggle:hover {
-    color: var(--clr-primary-5);
-    transform: rotate(360);
-  }
+  transform: rotate(360deg);
 }
 
 .links-container {
