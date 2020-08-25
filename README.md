@@ -7,7 +7,7 @@ This is a my portofilio website displaying some of my skills in JS,HTML and CSS
 Head over to [Website](https://mdial009.github.io/) and you can check it out.
 
 ## What I Learned
-* Advanced my Knowledge on the CSS Trick(Animation, Media Query
+* Advanced my Knowledge on the CSS Trick(Animation, Media Query)
 * Advanced my HTML my knowledge of of different tags 
 * Advanced my knowledge in Javascript
 
