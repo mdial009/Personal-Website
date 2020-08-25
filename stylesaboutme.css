@@ -170,15 +170,15 @@ Scroll
 ===============
 */
 /* navbar */
-
+nav {
+}
 /* fixed nav */
 .fixed-nav {
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
   box-shadow: var(--light-shadow);
-}
-.fixed-nav:hover {
-  transform: rotate(360deg);
 }
 .fixed-nav .links a {
   color: var(--clr-primary-5);
@@ -213,9 +213,7 @@ Scroll
   overflow: hidden;
   transition: var(--transition);
 }
-.show-links {
-  height: 200px;
-}
+
 .links a {
   color: var(--clr-primary-9);
   font-size: 1.1rem;
@@ -232,6 +230,8 @@ Scroll
 }
 
 @media screen and (min-width: 800px) {
+  nav {
+  }
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -251,7 +251,6 @@ Scroll
   .links {
     display: flex;
     padding-right: 410px;
-    transition: var(--transition);
   }
   .links a {
     background: transparent;
@@ -304,13 +303,11 @@ header {
 }
 #about {
   height: auto;
-  min-height: auto;
   background: linear-gradient(#1a6aa2, rgba(0, 0, 0, 0.1)),
     url() center/cover no-repeat;
 }
 #contact {
   height: auto;
-  min-height: auto;
   background: url(./images/desktop-3820634_1920.jpg) center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
