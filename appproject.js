@@ -50,6 +50,14 @@ const menu = [
     img: "./images/PortfolioWebsite.png",
     desc: `Personal Portfolio Website Deployed by github pages`,
   },
+  {
+    id: 6,
+    title: "Stock Web Application",
+    category: "Python",
+    link: "https://github.com/mdial009/Stock-Web-Application",
+    img: "./images/StockWebApplication1.png",
+    desc: `This is a stock market dashboard to show some charts and data on some stock`,
+  },
 ];
 // ********** Project Section (Filiter) ************
 
