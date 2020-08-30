@@ -440,7 +440,7 @@ Extras
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   bottom: 0;
 }
@@ -697,7 +697,16 @@ Extras
     width: 100%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
+  .tooltip-1 .pin {
+    display: none;
+  }
+  .tooltip-2 .pin {
+    display: none;
+  }
+  .tooltip-3 .pin {
+    display: none;
+  }
   .TheToolTip {
     display: none;
   }
