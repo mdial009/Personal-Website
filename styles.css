@@ -389,10 +389,9 @@ Footer
 /*Footer*/
 footer {
   background: var(--clr-primary-5);
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: auto;
+  bottom: 0;
+  position: absolute;
 }
 footer p {
   color: var(--clr-white);
@@ -699,13 +698,7 @@ Extras
   }
 }
 @media screen and (max-width: 1000px) {
-  .tooltip-1 .pin {
-    display: none;
-  }
-  .tooltip-2 .pin {
-    display: none;
-  }
-  .tooltip-3 .pin {
+  .TheToolTip {
     display: none;
   }
 }
