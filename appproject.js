@@ -58,6 +58,17 @@ const menu = [
     img: "./images/StockWebApplication1.png",
     desc: `This is a stock market dashboard to show some charts and data on some stock`,
   },
+  {
+    id: 7,
+    title: "Github Users",
+    category: "React",
+    category2: "Javascript",
+    category3: "HTML",
+    category4: "CSS",
+    link: "https://github.com/mdial009/Github-User-Project",
+    img: "./images/GithubUserProject.png",
+    desc: `A React App that lets you search up different users on GitHub using GitHub API. You are able to see different stats about the users(Followers/Following, Repos)`,
+  },
 ];
 // ********** Project Section (Filiter) ************
 
@@ -96,7 +107,7 @@ function displayMenuButtons() {
       }
       return values;
     },
-    ["all", "Unity", "C#", "CSS", "Javascript"]
+    ["all", "Unity", "C#", "CSS", "Javascript", "React"]
   );
   const categoryBtns = categories
     .map(function (category) {
@@ -115,6 +126,7 @@ function displayMenuButtons() {
       const category = e.currentTarget.dataset.id;
       const category2 = e.currentTarget.dataset.id;
       const category3 = e.currentTarget.dataset.id;
+      const category4 = e.currentTarget.dataset.id;
 
       const menuCategory = menu.filter(function (menuItem) {
         if (menuItem.category === category) {
@@ -124,6 +136,9 @@ function displayMenuButtons() {
           return menuItem;
         }
         if (menuItem.category3 === category3) {
+          return menuItem;
+        }
+        if (menuItem.category4 === category4) {
           return menuItem;
         }
       });

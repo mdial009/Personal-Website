@@ -81,6 +81,7 @@ body {
   --text-color: #ffffff;
   background: var(--background-color);
   color: var(--text-color);
+  position: relative;
 }
 ol {
   list-style: none;
@@ -301,11 +302,10 @@ Projects
 .menu-item {
   display: grid;
   gap: 1rem 2rem;
-  max-width: 25rem;
 }
 .photo {
   object-fit: cover;
-  height: 190px;
+  height: auto;
   border: 0.3rem double var(--clr-primary-5);
   border-radius: var(--radius);
   width: 100%;
@@ -325,16 +325,14 @@ Projects
 
 @media screen and (min-width: 768px) {
   .menu-item {
-    grid-template-columns: 225px 1fr;
-    gap: 0 1.25rem;
-    max-width: 40rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+    padding: 20px;
   }
   .section-centermenu {
-    width: 100%;
     margin: 0 auto;
-    max-width: 1980px;
     display: grid;
-    gap: 1.5rem 1rem;
+    gap: 10px 20px;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
   }
@@ -368,9 +366,9 @@ Footer
 /*Footer*/
 footer {
   background: var(--clr-primary-5);
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 100%;
+  height: auto;
 }
 footer p {
   color: var(--clr-white);
@@ -380,10 +378,8 @@ footer p {
   margin-bottom: 0;
 }
 .social-icon {
-  flex-direction: row;
   justify-content: center;
   display: flex;
-  align-items: bottom;
 }
 .social-item img {
   filter: grayscale(1);
@@ -400,9 +396,6 @@ footer p {
   .social-item:hover img {
     filter: grayscale(0);
   }
-  footer {
-    position: relative;
-  }
 }
 /*End Of Footer Section*/
 
@@ -411,15 +404,8 @@ footer p {
 Extras
 ===============
 */
-/*Spinning Cubes Section*/
+/* /*Spinning Cubes Section*/
 @media screen and (min-width: 800px) {
-  .backgroundanime {
-    background-color: #49a6e9;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-
   .cube li {
     position: absolute;
     list-style: none;
