@@ -96,7 +96,7 @@ h3,
 h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
-  line-height: 1.25;
+  line-height: 0.9;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
 }
@@ -253,41 +253,44 @@ HomePage
   background-repeat: no-repeat;
   min-height: 100vh;
 }
-@media screen and (min-width: 400px) {
-  /* hello my name is */
-  .centerthis {
-    position: absolute;
-    left: 51%;
-    margin-left: -100px;
-  }
-  .TitleNameIndex1 {
-    display: block;
-    width: fit-content;
-    position: relative;
-    color: transparent;
-    animation: text_reveal 0.7s ease forwards;
-    animation-delay: 1.5s;
-  }
-  .TitleNameIndex2 {
-    display: block;
-    width: fit-content;
-    position: relative;
-    color: transparent;
-    margin-left: -110px;
-    animation: text_reveal 0.5s ease forwards;
-    animation-delay: 2.5s;
-  }
-  .TitleNameIndex3 {
-    display: block;
-    color: var(--clr-primary-5);
-    position: relative;
-    width: fit-content;
-    margin-left: -150px;
-    color: transparent;
-    animation: text_reveal_name 0.5s ease forwards;
-    animation-delay: 3.5s;
-  }
+
+/* hello my name is */
+.centerthis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
+.centerthis1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TitleNameIndex1 {
+  width: fit-content;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.7s ease forwards;
+  animation-delay: 1.5s;
+}
+.TitleNameIndex2 {
+  width: fit-content;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 2.5s;
+}
+.TitleNameIndex3 {
+  position: relative;
+  width: fit-content;
+  color: transparent;
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3.5s;
+}
+
 .nameanime1 {
   position: absolute;
   top: 0;
@@ -339,40 +342,22 @@ HomePage
     color: var(--clr-primary-5);
   }
 }
-/* iPhone css */
+/* iPhone 6 and up css */
 @media screen and (max-width: 450px) {
   .centerthis {
-    position: absolute;
-    left: 60%;
-    margin-left: -90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
-  .TitleNameIndex1 {
-    display: block;
-    width: fit-content;
-    position: relative;
-    margin-left: -10px;
-    color: transparent;
-    animation: text_reveal 0.7s ease forwards;
-    animation-delay: 1.5s;
-  }
-  .TitleNameIndex2 {
-    display: block;
-    width: fit-content;
-    position: relative;
-    color: transparent;
-    margin-left: -100px;
-    animation: text_reveal 0.5s ease forwards;
-    animation-delay: 2.5s;
-  }
-  .TitleNameIndex3 {
-    display: block;
-    width: fit-content;
-    color: var(--clr-primary-5);
-    position: relative;
-    margin-left: -120px;
-    color: transparent;
-    animation: text_reveal_name 0.5s ease forwards;
-    animation-delay: 3.5s;
+}
+/*Iphone 5*/
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 2.5rem;
   }
 }
 /*
