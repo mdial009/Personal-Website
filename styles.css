@@ -687,16 +687,6 @@ Extras
 
 /* Media Query */
 
-@media (max-width: 768px) {
-  .tooltip-1 .tooltip-content {
-    flex-direction: column;
-    max-width: 300px;
-  }
-  .tooltip-1 .tooltip-content .content,
-  .tooltip-1 .tooltip-content .img {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 800px) {
   .tooltip-1 .pin {
     display: none;
