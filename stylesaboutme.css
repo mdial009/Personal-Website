@@ -393,11 +393,13 @@ footer p {
 }
 
 /* contact Section */
-#contact .contact {
+#contact {
   max-width: auto;
   margin: 0 auto;
 }
 #contact .contact-items {
+  display: flex;
+  flex-wrap: wrap;
   width: auto;
   margin-bottom: -88px;
   color: var(--clr-primary-5);
