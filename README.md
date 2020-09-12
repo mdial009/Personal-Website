@@ -14,8 +14,6 @@ Head over to [Website](https://mdial009.github.io/) and you can check it out.
 
 
 
-
-
 ## Acknowledgments
 * Hat tip to anyone whose code was used
 * Inspiration
