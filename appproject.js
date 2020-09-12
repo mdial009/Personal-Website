@@ -69,6 +69,14 @@ const menu = [
     img: "./images/GithubUserProject.png",
     desc: `A React App that lets you search up different users on GitHub using GitHub API. You are able to see different stats about the users(Followers/Following, Repos)`,
   },
+  {
+    id: 8,
+    title: "Discord Bot",
+    category: "Javascript",
+    link: "https://github.com/mdial009/Discord-Bot",
+    img: "./images/DiscordBot.png",
+    desc: `Created a Discord Bot With Node.js that allows the user to ban/kick a person. As well as remove/assign a role to a person by having them react to a message.  `,
+  },
 ];
 // ********** Project Section (Filiter) ************
 
